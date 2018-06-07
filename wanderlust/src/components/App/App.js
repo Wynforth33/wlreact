@@ -1,8 +1,13 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+// Imports
+import React from 'react';
+import './App.css'; // 'App' Stylesheet
+import ApiCore from '../../util/ApiCore/ApiCore'; // 'ApiCore' (Data Object)
+import SearchBar from '../SearchBar/SearchBar'; // <SearchBar />
+import Weather from '../Weather/Weather'; // <Weather />
+import VenueList from '../VenueList/VenueList'; // <VenueList />
 
-class App extends Component {
+// Create <App /> ['React'(Component)]
+class App extends React.Component {
   render() {
     return (
       <div className="App">
@@ -18,4 +23,5 @@ class App extends Component {
   }
 }
 
-export default App;
+// Exports
+export default App; // Export <App />
